@@ -1,67 +1,23 @@
-import re
-
-### 1. The Match Function ###
-# re.match(pattern, string, flags=0)
-# string = "Robots are much cooler than chicken"
-# match = re.match( r'(.*) are (.*?) .*', string, re.I)
-
-# if match:
-#     print(match.groups(1))
-
-### 2. The Search Function ###
-# re.search(pattern, string, flags=0)
-# string = "Robots are much cooler than chicken"
-# match = re.search( r'(.*) are (.*?) .*', string, re.I)
-
-# if match:
-#     print(match.group(2))
-
-
-### 3. Matching VS Searching ###
-# string = "Robots are much cooler than chicken"
-
-# match = re.match(r'chicken', string, re.I)
-# if match:
-#     print("Match", match.group())
-# else:
-#     print("No Match")
+# Regular Expression Modifiers: Option Flags
+## 1 re.I
+## Performs case-insensitive matching.
+## 2 re.L
+## Interprets words according to the current locale. 
+## This interpretation affects the alphabetic group (\w and \W), as well as word boundary behavior(\b and \B).
+## 3 re.M
+## Makes $ match the end of a line (not just the end of the string) and makes ^ match the start of any line 
+## (not just the start of the string).
+## 4 re.S
+## Makes a period (dot) match any character, including a newline.
+## 5 re.U
+## Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B.
+## 6 re.X
+## Permits "cuter" regular expression syntax. 
+## It ignores whitespace (except inside a set [] or when escaped by a backslash) 
+## and treats unescaped # as a comment marker.
 
 
-# search = re.search(r'chicken', string, re.I)
-# if search:
-#     print("Search", search.group())
-# else:
-#     print("No Search")
-
-
-### 4. Search and Replace ###
-# re.sub(pattern, repl, string, max=0)
-# phone = "123-458-785 US"
-
-# num = re.sub(r'\-', "", phone)
-# print(num)
-
-
-### 5. Regular Expression Modifiers: Option Flags ###
-# 1 re.I
-# Performs case-insensitive matching.
-# 2 re.L
-# Interprets words according to the current locale. 
-# This interpretation affects the alphabetic group (\w and \W), as well as word boundary behavior(\b and \B).
-# 3 re.M
-# Makes $ match the end of a line (not just the end of the string) and makes ^ match the start of any line 
-# (not just the start of the string).
-# 4 re.S
-# Makes a period (dot) match any character, including a newline.
-# 5 re.U
-# Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B.
-# 6 re.X
-# Permits "cuter" regular expression syntax. 
-# It ignores whitespace (except inside a set [] or when escaped by a backslash) 
-# and treats unescaped # as a comment marker.
-
-
-### Regular Expression Patterns ###
+Regular Expression Patterns
 # 1 ^
 # Matches beginning of line.
 # 2 $
@@ -137,13 +93,3 @@ import re
 # 37 \10
 # Matches nth grouped subexpression if it matched already. 
 # Otherwise refers to the octal representation of a character code.
-
-# Example
-# Check if String is an Email
-# pattern = r"[a-zA-Z0-9]+@[a-zA-Z]+\.(com|edu|net)"
-# email = "myemail123@gmail.com"
-# search = re.search(pattern, email, re.I)
-# if search:
-#     print("Search", search.group())
-# else:
-#     print("No Search")
