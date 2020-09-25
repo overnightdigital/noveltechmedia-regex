@@ -1,20 +1,20 @@
 # Regular Expression Modifiers: Option Flags
-## 1 re.I
-## Performs case-insensitive matching.
-## 2 re.L
-## Interprets words according to the current locale. 
-## This interpretation affects the alphabetic group (\w and \W), as well as word boundary behavior(\b and \B).
-## 3 re.M
-## Makes $ match the end of a line (not just the end of the string) and makes ^ match the start of any line 
-## (not just the start of the string).
-## 4 re.S
-## Makes a period (dot) match any character, including a newline.
-## 5 re.U
-## Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B.
-## 6 re.X
-## Permits "cuter" regular expression syntax. 
-## It ignores whitespace (except inside a set [] or when escaped by a backslash) 
-## and treats unescaped # as a comment marker.
+## re.I
+Performs case-insensitive matching.
+## re.L
+Interprets words according to the current locale. 
+This interpretation affects the alphabetic group (\w and \W), as well as word boundary behavior(\b and \B).
+## re.M
+Makes $ match the end of a line (not just the end of the string) and makes ^ match the start of any line 
+(not just the start of the string).
+## re.S
+Makes a period (dot) match any character, including a newline.
+## re.U
+Interprets letters according to the Unicode character set. This flag affects the behavior of \w, \W, \b, \B.
+## re.X
+Permits "cuter" regular expression syntax. 
+It ignores whitespace (except inside a set [] or when escaped by a backslash) 
+and treats unescaped # as a comment marker.
 
 
 Regular Expression Patterns
