@@ -16,8 +16,7 @@ Permits "cuter" regular expression syntax.
 It ignores whitespace (except inside a set [] or when escaped by a backslash) 
 and treats unescaped # as a comment marker.
 
-
-
+<br />
 
 # Regular Expression Patterns
 ## ^
